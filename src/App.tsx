@@ -18,7 +18,14 @@ function App() {
     };
   }, []);
 
-  return <whereby-embed room={import.meta.env.VITE_ROOM_URL} lang="es" />;
+  return (
+    <whereby-embed
+      room={import.meta.env.VITE_ROOM_URL}
+      lang="es"
+      metadata="?ghestId=1235466" // id del que invita
+      externalId="PARTICIPANT_ID"
+    />
+  );
 }
 
 export default App;
